@@ -8,6 +8,66 @@
   <title>Rsschool-cv-html</title>
 </head>
 <body>
-  
+  <div class="wrapper">
+    <header class="header">
+      <h1>Rsschool-cv</h1>
+    </header>
+    <main>
+      <div class="about">
+        <h2 class="about__name">Stanislau Bandarchuk</h2>
+        <div class="about__wrapper">
+          <img class="about__image" src="me.jpg" alt="me">
+          <div class="about__contacts">
+            <h3 class="contacts__header">Contact information:</h3>
+            <ul class="contacts__list">
+              <li>Phone: <a href="tel:+375259395059">+375(25)9395059</a></li>
+              <li>Email: <a href="mailto:desudesu410@gmail.com">desudesu410@gmail.com</a></li>
+              <li>Discord: desudesu#2218</li>
+            </ul>
+          </div>
+          <div class="skills">
+            <h3 class="skills__header">Skills:</h3>
+            <p>Basic knowledge in:</p>
+            <ul class=skills__list>
+              <li>C++</li>
+              <li>Python</li>
+              <li>MS SQL</li>
+              <li>HTML, CSS, JS, Webpack</li>
+            </ul>
+          </div>
+          <div class="english">
+            <h3 class="english__header">English:</h3>
+            <p class="english__text">A1</p>
+          </div>
+        </div>
+      </div>
+      <div class="summary">
+        <h3 class="summary__header">Summary:</h3>
+        <p class="summary__text">I want to get some front-end skills to become a web-developer. In rsschool I hope to get a lot of experience and i hope it will help me to find junior web-developer job.</p>
+      </div>
+      <div class="code-example">
+        <h3 class="code-example__header">Code example:</h3>
+        <code class="code-example__text">
+          function willYouMarryMe(isPositiveAnswer) {<br>
+            &nbsp;&nbsp;const promise = new Promise((resolve, reject) => {<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;if (typeof isPositiveAnswer !== 'boolean') {<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;reject(new Error('Wrong parameter is passed! Ask her again.'));<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;}<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;if (isPositiveAnswer) {<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;resolve('Hooray!!! She said "Yes"!');<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;} else {<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;resolve('Oh no, she said "No".');<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;}<br>
+            &nbsp;&nbsp;});<br>
+            &nbsp;&nbsp;return promise;<br>
+          }
+        </code>
+      </div>
+      <div class="education">
+        <h3 class="education__header">Education:</h3>
+        <p class="education__text">Francisk Skorina Gomel State University(applied math, 2017).</p>
+      </div>
+    </main>
+  </div>
 </body>
 </html>

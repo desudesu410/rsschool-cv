@@ -1,0 +1,44 @@
+$color-header: #F1CDB3;
+$color-white:#ffffff;
+$color-black:#000000;
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  background-image: url('/background.png');
+  background-size: cover;
+  color: $color-white;
+}
+
+.header {
+  color: $color-header;
+}
+
+.wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.about {
+  border: 2px solid $color-white;
+  box-shadow: 0 0 5px $color-white;
+  padding: 15px;
+  &__name {
+    font-size: 36px;
+  }
+  &__wrapper {
+    margin: 0 auto;
+    max-width: 80%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-around;
+
+  }
+  &__image {
+    width: 250px;
+    box-shadow: 0 0 15px $color-black;
+  }
+}
