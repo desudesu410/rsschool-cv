@@ -1,20 +1,39 @@
 $color-header: #F1CDB3;
 $color-white:#ffffff;
 $color-black:#000000;
+$color-dark: #0000008c;
+$color-link: #feffd0;
+$color-blue: #6efaff;
 
 * {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 body {
-  height: 100vh;
-  background-image: url('./assets/background.png');
+  min-height: 100vh;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  background-image: url('../assets/background.png');
   background-size: cover;
   color: $color-white;
+  a {
+    text-decoration: none;
+    color: $color-link;
+  }
 }
 
 .header {
+  padding-top: 15px;
   color: $color-header;
+}
+
+.main {
+  margin-top: 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 800px;
 }
 
 .wrapper {
@@ -24,21 +43,99 @@ body {
 
 .about {
   border: 2px solid $color-white;
-  box-shadow: 0 0 5px $color-white;
+  box-shadow: 0 0 2px $color-white;
   padding: 15px;
-  &__name {
+  .name {
     font-size: 36px;
   }
   &__wrapper {
-    margin: 0 auto;
+    margin: 20px auto 0;
     max-width: 80%;
     display: flex;
     align-items: flex-start;
     justify-content: space-around;
 
   }
-  &__image {
+  .image {
     width: 250px;
     box-shadow: 0 0 15px $color-black;
   }
+  .contacts {
+    &__list {
+      margin: 10px 0 0 20px;
+    }
+  }
+  .skills {
+    &__text {
+      margin-top: 10px;
+    }
+    &__list {
+      margin: 5px 0 0 20px;
+    }
+  }
+  .english {
+    &__text {
+      margin-top: 10px;
+    }
+  }
 }
+
+.summary {
+  &__header {
+    color: $color-header;
+  }
+  &__text {
+    margin: 5px 0 0 15px;
+  }
+}
+
+.code-example {
+  &__header {
+    color: $color-header;
+  }
+  padding: 10px;
+  background-color: $color-dark;
+  box-shadow: 0 0 15px $color-black;
+  &__header {
+    margin-bottom: 5px;
+  }
+  &__text {
+    color: $color-blue;
+  }
+}
+
+.education {
+  &__header {
+    color: $color-header;
+  }
+  &__text {
+    margin: 5px 0 0 15px;
+  }
+}
+
+.footer {
+  display: flex;
+  justify-content: space-around;
+  margin: 0 auto;
+  align-items: center;
+  width: 100%;
+  border: 2px solid $color-white;
+  box-shadow: 0 0 2px $color-white;
+  margin-top: 15px;
+  padding: 5px;
+  &__header {
+    display: flex;
+    font-size: 26px;
+    margin-bottom: 5px;
+  }
+  &__link {
+    min-width: 100px;
+    height: 38px;
+    background: url('../assets/rs_school.svg') ;
+    background-color: $color-link;
+    border-radius: 10px;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+}
+
