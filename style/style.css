@@ -1,17 +1,41 @@
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 body {
-  height: 100vh;
+  min-height: 100vh;
+  font-family: Georgia, 'Times New Roman', Times, serif;
   background-image: url("../assets/background.png");
   background-size: cover;
   color: #ffffff;
 }
 
+body a {
+  text-decoration: none;
+  color: #feffd0;
+}
+
 .header {
+  padding-top: 15px;
   color: #F1CDB3;
+}
+
+.main {
+  margin-top: 25px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  min-height: 800px;
 }
 
 .wrapper {
@@ -21,17 +45,17 @@ body {
 
 .about {
   border: 2px solid #ffffff;
-  -webkit-box-shadow: 0 0 5px #ffffff;
-          box-shadow: 0 0 5px #ffffff;
+  -webkit-box-shadow: 0 0 2px #ffffff;
+          box-shadow: 0 0 2px #ffffff;
   padding: 15px;
 }
 
-.about__name {
+.about .name {
   font-size: 36px;
 }
 
 .about__wrapper {
-  margin: 0 auto;
+  margin: 20px auto 0;
   max-width: 80%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -43,9 +67,96 @@ body {
       justify-content: space-around;
 }
 
-.about__image {
+.about .image {
   width: 250px;
   -webkit-box-shadow: 0 0 15px #000000;
           box-shadow: 0 0 15px #000000;
+}
+
+.about .contacts__list {
+  margin: 10px 0 0 20px;
+}
+
+.about .skills__text {
+  margin-top: 10px;
+}
+
+.about .skills__list {
+  margin: 5px 0 0 20px;
+}
+
+.about .english__text {
+  margin-top: 10px;
+}
+
+.summary__header {
+  color: #F1CDB3;
+}
+
+.summary__text {
+  margin: 5px 0 0 15px;
+}
+
+.code-example {
+  padding: 10px;
+  background-color: #0000008c;
+  -webkit-box-shadow: 0 0 15px #000000;
+          box-shadow: 0 0 15px #000000;
+}
+
+.code-example__header {
+  color: #F1CDB3;
+}
+
+.code-example__header {
+  margin-bottom: 5px;
+}
+
+.code-example__text {
+  color: #6efaff;
+}
+
+.education__header {
+  color: #F1CDB3;
+}
+
+.education__text {
+  margin: 5px 0 0 15px;
+}
+
+.footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin: 0 auto;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  border: 2px solid #ffffff;
+  -webkit-box-shadow: 0 0 2px #ffffff;
+          box-shadow: 0 0 2px #ffffff;
+  margin-top: 15px;
+  padding: 5px;
+}
+
+.footer__header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 26px;
+  margin-bottom: 5px;
+}
+
+.footer__link {
+  min-width: 100px;
+  height: 38px;
+  background: url("../assets/rs_school.svg");
+  background-color: #feffd0;
+  border-radius: 10px;
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 /*# sourceMappingURL=style.css.map */
